@@ -1,14 +1,26 @@
+import java.util.Scanner;
 public class Tablicja_mnogen9 {
     public static void main(String[] args) {
-
-        for (int i = 1; i < 20; i++) {
-            for (int k = 1; k < 20; k++) {
-                if (k*i == 1)
-                    System.out.print("   ");
-                else
-                System.out.print(k * i + "    ");
+        Scanner x = new Scanner(System.in);
+        System.out.println("Введіть початок таблиці множення по  вертикалі");
+        int a = x.nextInt();
+        System.out.println("Введіть кінець таблиці множення по вертикалі");
+        int b = x.nextInt();
+        System.out.println("Введіть початок таблиці по горизонталі");
+        int c = x.nextInt();
+        System.out.println("Введіть кінець таблиці по горизонталі");
+        int d = x.nextInt();
+        System.out.print("   ");             // робим відступ в верхньому лівому куті
+        for (int i = c; i < d; i++) {
+            System.out.print(i + "  ");      // виводимо множники по горизонталі
+        }
+        System.out.println();              // переходим  на наступний рядок для заповнення таблиці по горизонталі
+        for (int i = a; i < b; i++) {
+            System.out.print(i+"  ");      //виводимо множники по вертикалі
+            for (int k = c; k < d; k++) {     // цикл для заповнення таблиці значеннями
+                System.out.print(k * i + "  ");   // формула для внесення в таблицю
             }
-            System.out.println("");
+            System.out.println("");            // виводим на новий рядок кожен рядок циклу для заповненян таблиці
         }
     }
 }

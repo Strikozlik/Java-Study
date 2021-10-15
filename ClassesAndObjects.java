@@ -1,6 +1,6 @@
 public class ClassesAndObjects {
     public static void main(String[] args) {
-            Person1 person1 = new Person1();
+            Person person1 = new Person();
             person1.name = "Pavlo";
             person1.age = 35;
             person1.food = "Pelmeni";
@@ -12,7 +12,7 @@ public class ClassesAndObjects {
             person2.speak();
         }
     }
-    class Person1{
+    class Person{
         String name;
         int age;
         String food;

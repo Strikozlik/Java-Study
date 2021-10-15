@@ -13,15 +13,17 @@ public class masiveMetods {
         }
 
 
-        Arrays.sort(numbers);
         System.out.println("Ваш масив " + Arrays.toString(numbers));
+        Arrays.sort(numbers);
         System.out.println("Відсортований масив " + Arrays.toString(numbers));
         System.out.println("Максимальне число масиву " + getMaxValue(numbers));
         System.out.println("Мінімальне число  масиву " + getMinValue(numbers));
         System.out.println("Сума всіх чисел масиву " + getSumValue(numbers));
         System.out.println("Cереднє значення всіх чисел масиву " + getSerValue(numbers));
         System.out.println("Cума максимального і мінімального " + getSumMaxPlusMin(numbers));
+
     }
+
 
     public static int getMaxValue(int[] numbers) {
         int max = Integer.MIN_VALUE;
@@ -64,8 +66,17 @@ public class masiveMetods {
         return summaxmin;
     }
 
-
+    public static void vuvidChusel(int[] numbers,int a,int b){
+        Scanner x = new Scanner(System.in);
+        System.out.println("Введіть число для початку масиву");
+        int c = x.nextInt();
+        System.out.println("Введіть число для кінця масиву");
+        int d = x.nextInt();
+        for(int i=a;i<b;i++){
+            System.out.println(numbers[i]);
+        }
     }
+}
 
 
 

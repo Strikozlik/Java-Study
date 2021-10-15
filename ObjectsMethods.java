@@ -1,12 +1,12 @@
 public class ObjectsMethods {
     public static void main(String[] args) {
-        Person person1 = new Person();
+        Person1 person1 = new Person1();
         person1.setNameAndAge("Pavlo",35);
 
         person1.food = "Pelmeni";
         person1.speak();
         int year1 = person1.calculateYearsToRetirement();
-        Person person2 = new Person();
+        Person1 person2 = new Person1();
         String s1 = "Sania";
         person2.setNameAndAge(s1,50);
 
@@ -17,7 +17,7 @@ public class ObjectsMethods {
         System.out.println("Сашку до пенсії " + year2 + " років");
     }
 }
-class Person{
+class Person1{
     String name;
     int age;
     String food;

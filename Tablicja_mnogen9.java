@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.String;
 public class Tablicja_mnogen9 {
     public static void main(String[] args) {
         Scanner x = new Scanner(System.in);
@@ -12,7 +13,7 @@ public class Tablicja_mnogen9 {
         int d = x.nextInt();
         System.out.print("   ");             // робим відступ в верхньому лівому куті
         for (int i = c; i < d; i++) {
-            System.out.print(i + "  ");      // виводимо множники по горизонталі
+            System.out.print(i +" \t ");      // виводимо множники по горизонталі
         }
         System.out.println();              // переходим  на наступний рядок для заповнення таблиці по горизонталі
         for (int i = a; i < b; i++) {

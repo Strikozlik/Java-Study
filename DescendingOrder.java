@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 public class DescendingOrder {
     public static void main(String[] args) {
-        int a = 12345;
+        int a = 895129296;
 
         System.out.println(sortDesc(a));
     }

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class MaxMasive {
+public class MaxMasive123 {
 
     public static void main(String[] args) {
 

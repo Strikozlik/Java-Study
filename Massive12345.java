@@ -1,9 +1,9 @@
-public class Massive {
+public class Massive12345 {
     public static void main(String[] args) {
         Person person1 = new Person();
         person1.name = "Pavlo";
         person1.age = 35;
-        person1.sayHello();
+
 
         Person bratyha = new Person();
         bratyha.name = "Oleks";
@@ -11,7 +11,7 @@ public class Massive {
         bratyha.speak();
     }
 }
-class Person {
+class Person12 {
     String name;
     int age;
 

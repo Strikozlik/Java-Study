@@ -4,7 +4,7 @@ public class PangramChecker {
         System.out.println(check(s));
     }
     public static boolean check(String sentence){
-        String x = sentence.toLowerCase();
+       /* String x = sentence.toLowerCase();
         if(x.contains("a") && x.contains("b") && x.contains("c") && x.contains("d")
                 && x.contains("e") && x.contains("f") && x.contains("g")
                 && x.contains("h") && x.contains("i") && x.contains("j")
@@ -16,8 +16,13 @@ public class PangramChecker {
                 && x.contains("z")){
             return true;
         }else{
-            return false;
+            return false;*/
+        for(char c = 'a';c<='z';c++){
+            if(!sentence.toLowerCase().contains("" + c))
+                return false;
+
+        }return true;
         }
     }
-}
+
 

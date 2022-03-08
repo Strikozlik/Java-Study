@@ -1,24 +1,29 @@
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class CountingDuplicates {
     public static void main(String[] args) {
-        String s = "Helloe";
+        String s = "indivisibility";
         System.out.println(duplicateCount(s));
 
     }
 
     public static int duplicateCount(String text) {
-        int res = 0;
-        String[] array = text.split("");
-        for (int i = 0; i < array.length ; i++) {
-          //  String s = String.valueOf(text.charAt(i));
+        HashSet<Character> set = new HashSet<>();
+        char[] chars = text.toLowerCase().toCharArray();
 
-                res++;
-
-            }return res;
+        for(int i = 0;i<chars.length;i++){
+            for(int j = i+1;j<chars.length;j++){
+                if(chars[i] == chars[j]){
+                    set.add(Character.valueOf(chars[i]));
+                }
+            }
+        }return set.size();
+    }
         }
 
 
-    }
 
-}
-}
+
+
 

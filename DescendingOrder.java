@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.regex.Pattern;
-
+/* на вхыд число довыльне на вихыд выдсортоване по спаданню по цифрам*/
 public class DescendingOrder {
     public static void main(String[] args) {
         int a = 895129296;

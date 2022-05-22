@@ -1,19 +1,15 @@
 public class Multiply {
     public static void main(String[] args) {
-        int test = 250;
+        double test = 1.08;
         System.out.println(multiply(test));
 
 
     }
-    public static int multiply(int number){
-        var multiplier = number.toString().replace(/\D+/g,"").length;
 
-        var scorer = 0;
-        for(scorer; scorer<multiplier; scorer++){
-            var result = parseInt(number *= 5);
-        }
+    public static int multiply(double x) {
+        return (int)(x*100*1000)/3600;
 
-        return result;
 
-    private static void parseInt() {
+
     }
+}

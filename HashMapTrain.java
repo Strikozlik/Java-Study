@@ -3,7 +3,7 @@ public class HashMapTrain {
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<String,Integer>();
         map.put("Pavlo",35);
-        map.put("Lesia",32);
+        map.put("Decora.Lesia",32);
         map.put("Roman",25);
         for(String key:map.keySet()){
             Integer value = map.get(key);
